@@ -1,9 +1,9 @@
 FROM alpine:latest
 
 MAINTAINER Saeed <saeedkhan11197@gmail.com>
-ADD Duplicate.jar Duplicate.jar
+ADD Test.jar Test.jar
 RUN apk --update add openjdk8-jre
-ENTRYPOINT ["java","-jar","Duplicate.jar"]
-EXPOSE 9092
+ENTRYPOINT ["java","-jar","Test.jar"]
+EXPOSE 9091
 
 
